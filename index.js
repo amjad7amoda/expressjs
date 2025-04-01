@@ -6,7 +6,7 @@ env.config();
 const express = require('express');
 const app = express();
 app.listen(process.env.PORT, process.env.HOSTNAME, () =>{
-    console.log(`Working on http://localhost:3000`);
+    console.log(`Working on http://localhost:${process.env.PORT}`);
 });
 
 // Cors Settings
