@@ -15,7 +15,7 @@ app.use(cors());
 
 //============== Database Setup ==================//
 const mongoose = require('mongoose');
-mongoose.connect(process.env.URL).then(() => {
+mongoose.connect("mongodb://localhost:27017/codeZone").then(() => {
     console.log('Database server started');
 });
 
